@@ -64,7 +64,7 @@ public class Auteur {
 
 	@Override
 	public String toString() {
-		return "L'id " + id + " correspond a l'auteur " + nom + " " + prenom +". Son numero de telephone est le " + telephone + " et son adresse mail est " + email+ ".";
+		return "L'id " + id + " correspond a l'auteur " + nom + " " + prenom +". Son numero de telephone est le " + telephone + " et son adresse mail est " + email+ ".\n";
 	}
 
 }

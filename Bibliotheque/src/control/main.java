@@ -39,13 +39,13 @@ public class main {
 			livre.setCategorie("Livre d'informatique");
 			livreDao.update(livre);
 			System.out.println(livre);
-			System.out.println("-------DELETE LIVRE----------");
+			System.out.println("-------DELETE LIVRE "+livre.getId()+"----------");
 			System.out.println();
 			livreDao.delete(livre.getId());
 			System.out.println("---------READ ALL LIVRE APRES DELETE------------");
 			System.out.println(livreDao.list());
 
-			System.out.println("-------DELETE AUTEUR----------");
+			System.out.println("-------DELETE AUTEUR "+auteur.getId()+"----------");
 			auteurDao.delete(auteur.getId());
 
 		} catch (DaoException e) {
