@@ -12,11 +12,11 @@ import model.Auteur;
 
 public class AuteurDaoImpl implements AuteurDao {
 
-	private static final String SQL_SELECT = "Select * From Auteur";
-	private static final String SQL_SELECT_BY_ID = "Select * From Auteur Where id=?";
-	private static final String SQL_INSERT = "Insert into Auteur(nom, prenom, telephone, email) Values (?,?,?,?)";
-	private static final String SQL_UPDATE = "Update Auteur Set nom=?, prenom=?, telephone=?, email=? Where id=?";
-	private static final String SQL_DELETE = "Delete From Auteur Where id=?";
+	private static final String SQL_SELECT = "Select * From auteur";
+	private static final String SQL_SELECT_BY_ID = "Select * From auteur Where id=?";
+	private static final String SQL_INSERT = "Insert into auteur(nom, prenom, telephone, email) Values (?,?,?,?)";
+	private static final String SQL_UPDATE = "Update auteur Set nom=?, prenom=?, telephone=?, email=? Where id=?";
+	private static final String SQL_DELETE = "Delete From auteur Where id=?";
 	
 	
 	private DaoFactory factory;
@@ -178,7 +178,7 @@ public class AuteurDaoImpl implements AuteurDao {
 		Auteur a = new Auteur();
 		a.setId(rs.getInt("id"));
 		a.setNom(rs.getString("nom"));
-		a.setprenom(rs.getString("prenom"));
+		a.setPrenom(rs.getString("prenom"));
 		a.setTelephone(rs.getString("telephone"));
 		a.setEmail(rs.getString("email"));
 		
