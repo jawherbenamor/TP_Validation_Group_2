@@ -1,21 +1,20 @@
 package model;
 
 public class Livre {
-	
-	
-	
-	private int id ;
-	private Auteur auteur ;
+
+	// Attributs:
+	private int id;
+	private Auteur auteur;
 	private String titre;
 	private int nb_pages;
 	private String categorie;
-	
+
+	// constructeurs
 	public Livre() {
-		super();
 	}
 
+	// Getters setters
 	public Livre(int id, Auteur auteur, String titre, int nb_pages, String categorie) {
-		super();
 		this.id = id;
 		this.auteur = auteur;
 		this.titre = titre;
@@ -65,11 +64,8 @@ public class Livre {
 
 	@Override
 	public String toString() {
-		return "Livres [id=" + id + ", auteur=" + auteur + ", titre=" + titre + ", nb_pages=" + nb_pages
-				+ ", categorie=" + categorie + "]";
+		return "Livre [id=" + id + ", auteur=" + auteur + ", titre=" + titre + ", nb_pages=" + nb_pages + ", categorie="
+				+ categorie + "]";
 	}
-	
-	
-	
 
 }
