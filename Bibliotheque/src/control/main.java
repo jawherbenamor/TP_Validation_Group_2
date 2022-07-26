@@ -47,6 +47,9 @@ public class main {
 
 			System.out.println("-------DELETE AUTEUR "+auteur.getId()+"----------");
 			auteurDao.delete(auteur.getId());
+			
+			System.out.println("---------READ ALL AUTEUR APRES DELETE------------");
+			System.out.println(auteurDao.list());
 
 		} catch (DaoException e) {
 			System.out.println(e.getMessage());
