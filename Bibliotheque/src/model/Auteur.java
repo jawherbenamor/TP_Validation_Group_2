@@ -57,7 +57,7 @@ public class Auteur {
 	}
 
 
-	public void setprenom(String prenom) {
+	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
 
@@ -83,8 +83,7 @@ public class Auteur {
 
 	@Override
 	public String toString() {
-		return "Auteur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", telephone=" + telephone + ", email="
-				+ email + "]";
+		return "L'id " + id + " correspond a l'auteur " + nom + " " + prenom +". Son numero de telephone est le " + telephone + " et son adresse mail est " + email+ ".";
 	}
 	
 	
