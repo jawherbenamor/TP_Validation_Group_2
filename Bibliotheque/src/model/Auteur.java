@@ -7,7 +7,7 @@ public class Auteur {
 	
 	private int id ;
 	private String nom;
-	private String prenon;
+	private String prenom;
 	private String telephone;
 	private String email;
 	
@@ -20,20 +20,10 @@ public class Auteur {
 	}
 
 
-	public Auteur(int id, String nom, String prenon, String telephone, String email) {
-		super();
-		this.id = id;
-		this.nom = nom;
-		this.prenon = prenon;
-		this.telephone = telephone;
-		this.email = email;
-	}
-
-
-	public Auteur(String nom, String prenon, String telephone, String email) {
+	public Auteur(String nom, String prenom, String telephone, String email) {
 		super();
 		this.nom = nom;
-		this.prenon = prenon;
+		this.prenom = prenom;
 		this.telephone = telephone;
 		this.email = email;
 	}
@@ -62,13 +52,13 @@ public class Auteur {
 	}
 
 
-	public String getPrenon() {
-		return prenon;
+	public String getPrenom() {
+		return prenom;
 	}
 
 
-	public void setPrenon(String prenon) {
-		this.prenon = prenon;
+	public void setprenom(String prenom) {
+		this.prenom = prenom;
 	}
 
 
@@ -93,7 +83,7 @@ public class Auteur {
 
 	@Override
 	public String toString() {
-		return "Auteur [id=" + id + ", nom=" + nom + ", prenon=" + prenon + ", telephone=" + telephone + ", email="
+		return "Auteur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", telephone=" + telephone + ", email="
 				+ email + "]";
 	}
 	
