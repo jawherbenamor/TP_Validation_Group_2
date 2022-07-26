@@ -14,8 +14,7 @@ public class Livre {
 	}
 
 	// Getters setters
-	public Livre(int id, Auteur auteur, String titre, int nb_pages, String categorie) {
-		this.id = id;
+	public Livre(Auteur auteur, String titre, int nb_pages, String categorie) {
 		this.auteur = auteur;
 		this.titre = titre;
 		this.nb_pages = nb_pages;
